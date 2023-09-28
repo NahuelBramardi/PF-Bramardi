@@ -64,3 +64,30 @@ p {
 
 /* footer */
 
+ /* Estilos para la lista horizontal */
+ ul.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.horizontal-list li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+ul.horizontal-list li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los iconos (puedes usar imágenes o fuentes de iconos) */
+ul.horizontal-list li a i {
+    margin-right: 5px; /* Espacio entre el icono y el texto del enlace */
+}
+
+/* Estilos para cambiar el color de los enlaces al pasar el cursor sobre ellos */
+ul.horizontal-list li a:hover {
+    color: #007bff; /* Color de enlace al pasar el cursor */
+}
