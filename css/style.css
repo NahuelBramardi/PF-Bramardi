@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -136,6 +137,41 @@ p {
     width: 100%;
     border-radius: 20px;
 }
+
+
+/* Galeria */
+
+.galeria {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.row {
+    margin: 0 0.50px 0 0.50px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column .galeria {
+    margin-top: 5px;
+}
+
+@media (max-width: 600px){
+
+    .column{
+        flex: 100%;
+    }
+
+}
+
+
+
 
 /* footer */
 ul.horizontal-list {
