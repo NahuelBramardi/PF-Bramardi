@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .container-bio {
+      text-align: center;
+  
+      /* Cambiar el texto al centro en pantallas más pequeñas */
+    }
+  
+    .text {
+      max-width: 100%;
+  
+      /* Hacer que el texto ocupe el ancho completo en pantallas más pequeñas */
+    }
+  
+    .imagen-bio {
+      float: none;
+  
+      /* Eliminar el flotante en pantallas más pequeñas */
+      margin: 10px auto;
+  
+      /* Centrar la imagen en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .footer-row {
+      text-align: center;
+    }
+  
+    .footer-links {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  

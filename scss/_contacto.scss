@@ -1,0 +1,149 @@
+/* Contacto */
+
+@mixin anclas {
+  text-decoration: none;
+}
+
+a {
+    @include anclas;
+  }
+  
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    background: $color-ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      color: $color-verdecito;
+    }
+  }
+  
+  .contenido {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  
+    .info, .formulario {
+      width: 50%;
+    }
+  }
+  
+  .info {
+    padding-left: 10px;
+  
+    .col {
+      width: 100%;
+      display: flex;
+      margin-bottom: 15px;
+      font-size: 16px;
+      align-items: center;
+      flex-wrap: nowrap;
+  
+      .icono {
+        color: $color-verdecito;
+        margin-right: 10px;
+      }
+  
+      p {
+        color: $color-gris;
+        font-family: 'Quicksand', sans-serif;
+      }
+    }
+  
+    .redes-s {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 25px;
+      display: flex;
+      flex-wrap: wrap;
+  
+      a {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background: $color-verdecito;
+        color: $color-ffffff;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+  
+        &:hover {
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+          background: $color-negro;
+        }
+      }
+    }
+  }
+  
+  .formulario {
+    padding-left: 10px;
+  }
+  
+  .formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    /* Alinea los elementos a la izquierda */
+    margin-top: 20px;
+  
+    /* Espaciado superior */
+  }
+  
+  .formulario {
+    input[type='text'] {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px 20px;
+      border: 1px solid $color-gris;
+      color: $color-gris;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      outline: 0;
+    }
+  
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px 20px;
+      border: 1px solid $color-gris;
+      color: $color-gris;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      outline: 0;
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 150px;
+      max-height: 200px;
+    }
+  
+    input[type='text']:focus, textarea:focus {
+      border: 1px solid $color-verdecito;
+    }
+  
+    button {
+      padding: 12px 30px;
+      border: transparent;
+      background: $color-verdecito;
+      color: $color-ffffff;
+      cursor: pointer;
+  
+      /* float: right; */
+  
+      /* Elimina esta línea para alinear el botón a la izquierda */
+      align-self: flex-end;
+  
+      /* Alinea el botón a la derecha dentro del contenedor */
+    }
+  }
+  

@@ -1,0 +1,76 @@
+/* Inicio */
+
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin anclas {
+  text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: 'Dela Gothic One', cursive;
+    margin: 40px;
+  }
+  
+  h3 {
+    font-family: 'Dela Gothic One', cursive;
+    margin: 40px;
+  }
+  
+  p {
+    font-size: 27px;
+    margin: 10px;
+    font-family: 'Anton', sans-serif;
+    @include anclas;
+    text-align: center;
+  }
+  
+  .link-texto {
+    color: $color-alice;
+    @include anclas;
+    background-color: $color-azul;
+    border-radius: 0.8rem;
+    font-size: 25px;
+  }
+  
+  .spotify {
+    margin: 5px;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30%;
+    @include sizes(80%, 80%);
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .concierto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imgInicial {
+    margin: 10px;
+    @include sizes(100%, 100%);
+    border-radius: 20px;
+  }

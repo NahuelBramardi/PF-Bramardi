@@ -1,0 +1,22 @@
+/* Galeria */
+
+.galeria {
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .row {
+    margin: 0 0.50px 0 0.50px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 25%;
+    padding: 5px;
+  
+    .galeria {
+      margin-top: 5px;
+    }
+  }

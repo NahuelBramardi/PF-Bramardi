@@ -1,0 +1,20 @@
+/* Header */
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.miLogo {
+    @include sizes(150px, 90px);
+  }
+  
+  .miFondo {
+    background-color: $color-ffffff;
+  }
+  
+  .miLink:hover {
+    background-color: $color-negro;
+    color: $color-rojo;
+    margin: 20px;
+  }
+  

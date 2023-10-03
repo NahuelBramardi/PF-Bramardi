@@ -1,400 +1,370 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@100&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:wght@100&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    font-size: 20px;
-    text-transform: uppercase;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-html,
-body {
-    width: 100%;
-    overflow-x: hidden;
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
-
 .miLogo {
-    width: 150px;
+  height: 90px;
+  width: 150px;
 }
 
 .miFondo {
-    background-color: white;
+  background-color: #ffffff;
 }
 
 .miLink:hover {
-    background-color: black;
-    color: red;
-    margin: 20px;
+  background-color: #000;
+  color: red;
+  margin: 20px;
 }
-
-/* Inicio */
-
-h1,
-h2,
-h4 {
-    font-family: 'Dela Gothic One', cursive;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-h4,
-h3 {
-    font-family: 'Dela Gothic One', cursive;
-    margin: 40px;
-
-}
-
-p {
-    font-size: 27px;
-    margin: 10px;
-    font-family: 'Anton', sans-serif;
-    text-transform: none;
-    text-align: center;
-}
-
-.bio {
-    margin: 30px;
-    text-align: left;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 23px;
-}
-
-.link-texto {
-    color: aliceblue;
-    text-decoration: none;
-    background-color: blue;
-    border-radius: 0.8rem;
-    font-size: 25px;
-}
-
-.spotify {
-    margin: 5px;
-}
-
-.video-container {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 30%;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 40px;
-    margin-bottom: 15px;
-}
-
-
-.concierto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.container-bio {
-    display: block;
-    text-align: left;
-}
-
-.text {
-    margin: 10px auto;
-}
-
-/* imagenes */
-
-.imagen-bio {
-    margin: 15px;
-    margin-left: 10px;
-    max-width: 300px;
-    border-radius: 10px;
-    height: auto;
-    float: right;
-}
-
-@media screen and (max-width: 768px) {
-    .container-bio {
-        text-align: center;
-        /* Cambiar el texto al centro en pantallas más pequeñas */
-    }
-
-
-    .text {
-        max-width: 100%;
-        /* Hacer que el texto ocupe el ancho completo en pantallas más pequeñas */
-    }
-
-    .imagen-bio {
-        float: none;
-        /* Eliminar el flotante en pantallas más pequeñas */
-        margin: 10px auto;
-        /* Centrar la imagen en pantallas más pequeñas */
-    }
-}
-
-.imgInicial {
-    margin: 10px;
-    width: 100%;
-    border-radius: 20px;
-}
-
 
 /* Galeria */
-
 .galeria {
-    border-radius: 10px;
-    width: 100%;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .row {
-    margin: 0 0.50px 0 0.50px;
-    display: flex;
-    padding: 10px;
-    flex-wrap: wrap;
+  margin: 0 0.5px 0 0.5px;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 .column {
-    flex: 25%;
-    padding: 5px;
+  flex: 25%;
+  padding: 5px;
 }
-
 .column .galeria {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-
-@media (max-width: 600px) {
-
-    .column {
-        flex: 100%;
-    }
-
-}
-
-/* Contacto */
-
-a {
-    text-decoration: none;
-}
-
-.contenedor {
-    width: 90%;
-    max-width: 1000px;
-    background: #ffffff;
-    padding: 40px;
-    margin: 20px auto;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
-}
-
-.contenedor h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    color: #15cf8a;
-}
-
-.contenido {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-}
-
-.contenido .info,
-.contenido .formulario {
-    width: 50%;
-}
-
-.info {
-    padding-left: 10px;
-}
-
-.info .col {
-    width: 100%;
-    display: flex;
-    margin-bottom: 15px;
-    font-size: 16px;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-
-.info .col .icono {
-    color: #15cf8a;
-    margin-right: 10px;
-}
-
-
-.info .col p {
-    color: #999;
-    font-family: 'Quicksand', sans-serif;
-
-}
-
-
-.info .redes-s {
-    width: 100%;
-    overflow: hidden;
-    padding-left: 25px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.info .redes-s a {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    background: #15cf8a;
-    color: #ffffff;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
-}
-
-
-.info .redes-s a:hover {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
-    background: #000;
-}
-
-
-.formulario {
-    padding-left: 10px;
-}
-
-
-.formulario-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-
-.formulario input[type='text'],
-.formulario textarea {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 12px 20px;
-    border: 1px solid #999;
-    color: #999;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    outline: 0;
-}
-
-
-.formulario textarea {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 150px;
-    max-height: 200px;
-}
-
-
-.formulario input[type='text']:focus,
-.formulario textarea:focus {
-    border: 1px solid #15cf8a;
-} 
-
-
-.formulario button {
-    padding: 12px 30px;
-    border: transparent;
-    background: #15cf8a;
-    color: #ffffff;
-    cursor: pointer;
-    /* float: right; */ /* Elimina esta línea para alinear el botón a la izquierda */
-    align-self: flex-end; /* Alinea el botón a la derecha dentro del contenedor */
-}
-
 
 /* footer */
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer {
-    background-color: #24262b;
-    padding: 80px 0;
+  background-color: #24262b;
+  padding: 80px 0;
 }
 
 .footer-row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-links {
-    width: calc(33.33% - 15px);
-    padding: 0 15px;
-    color: #00c3ff;
-    text-align: left;
+  width: calc(33.33% - 15px);
+  padding: 0 15px;
+  color: #00c3ff;
+  text-align: left;
 }
-
 .footer-links h4 {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid red;
-    padding-bottom: 10px;
-    display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+  display: inline-block;
 }
-
 .footer-links .foteer {
-    font-size: 18px;
-    color: #ffffff;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
-
 .footer-links .foteer:hover {
-    color: #ffffff;
-    padding-left: 6px;
+  color: #ffffff;
+  padding-left: 6px;
 }
 
 .social-link a {
-
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all .5s ease;
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-
 .social-link a:hover {
-    background-color: red;
+  background-color: red;
 }
 
-@media (max-width:991px) {
-    .footer-row {
-        text-align: center;
-    }
-
-    .footer-links {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+/* Contacto */
+a {
+  text-decoration: none;
 }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.contenedor h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #15cf8a;
+}
+
+.contenido {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.contenido .info, .contenido .formulario {
+  width: 50%;
+}
+
+.info {
+  padding-left: 10px;
+}
+.info .col {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.info .col .icono {
+  color: #15cf8a;
+  margin-right: 10px;
+}
+.info .col p {
+  color: #999;
+  font-family: "Quicksand", sans-serif;
+}
+.info .redes-s {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info .redes-s a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #15cf8a;
+  color: #ffffff;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.info .redes-s a:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+  background: #000;
+}
+
+.formulario {
+  padding-left: 10px;
+}
+
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Alinea los elementos a la izquierda */
+  margin-top: 20px;
+  /* Espaciado superior */
+}
+
+.formulario input[type=text] {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  border: 1px solid #999;
+  color: #999;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  outline: 0;
+}
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  border: 1px solid #999;
+  color: #999;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  outline: 0;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+}
+.formulario input[type=text]:focus, .formulario textarea:focus {
+  border: 1px solid #15cf8a;
+}
+.formulario button {
+  padding: 12px 30px;
+  border: transparent;
+  background: #15cf8a;
+  color: #ffffff;
+  cursor: pointer;
+  /* float: right; */
+  /* Elimina esta línea para alinear el botón a la izquierda */
+  align-self: flex-end;
+  /* Alinea el botón a la derecha dentro del contenedor */
+}
+
+@media screen and (max-width: 768px) {
+  .container-bio {
+    text-align: center;
+    /* Cambiar el texto al centro en pantallas más pequeñas */
+  }
+  .text {
+    max-width: 100%;
+    /* Hacer que el texto ocupe el ancho completo en pantallas más pequeñas */
+  }
+  .imagen-bio {
+    float: none;
+    /* Eliminar el flotante en pantallas más pequeñas */
+    margin: 10px auto;
+    /* Centrar la imagen en pantallas más pequeñas */
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+/* Inicio */
+h1, h2 {
+  font-family: "Dela Gothic One", cursive;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-family: "Dela Gothic One", cursive;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Dela Gothic One", cursive;
+  margin: 40px;
+}
+
+h3 {
+  font-family: "Dela Gothic One", cursive;
+  margin: 40px;
+}
+
+p {
+  font-size: 27px;
+  margin: 10px;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-texto {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 0.8rem;
+  font-size: 25px;
+}
+
+.spotify {
+  margin: 5px;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30%;
+  height: 80%;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 40px;
+  margin-bottom: 15px;
+}
+
+.concierto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imgInicial {
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.bio {
+  margin: 30px;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 23px;
+}
+
+.container-bio {
+  display: block;
+  text-align: left;
+}
+
+.text {
+  margin: 10px auto;
+}
+
+/* imagenes */
+.imagen-bio {
+  margin: 15px;
+  margin-left: 10px;
+  max-width: 300px;
+  border-radius: 10px;
+  height: auto;
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
