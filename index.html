@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="img/linkin-park-band-logo-3F627013D0-seeklogo.com.png" type="image/x-icon">
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,11 +48,11 @@
     </header>
     <hr size="1px">
 
-    <h1>Linkin Park</h1>
+    <h1 data-aos="zoom-in">Linkin Park</h1>
 
     <hr size="1px">
 
-    <div class="row mt-4">
+    <div data-aos="zoom-in" class="row mt-4">
         <div class="col-xl-6 col-md-4 col-sm-12">
             <img class="imgInicial" src="img/linkinp.jpg" alt="Integrantes de Linkinp">
         </div>
@@ -69,17 +71,17 @@
 
     <hr size="1px">
 
-    <h2>Te Dejo un par de canciones</h2>
+    <h2 data-aos="fade-up">Te Dejo un par de canciones</h2>
 
     <div class="row spotify">
-        <div class="col-xl-4 col-md-4">
+        <div data-aos="zoom-in" class="col-xl-4 col-md-4">
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO47cwRq?utm_source=generator" width="100%"
                 height="352" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
         </div>
-        <div class="col-xl-4 col-md-4">
+        <div data-aos="zoom-in-up" class="col-xl-4 col-md-4">
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/album/6hPkbAV3ZXpGZBGUvL6jVM?utm_source=generator&theme=0"
                 width="100%" height="352" frameBorder="0" allowfullscreen=""
@@ -87,7 +89,7 @@
                 loading="lazy"></iframe>
         </div>
 
-        <div class="col-xl-4 col-md-4">
+        <div data-aos="zoom-in-down" class="col-xl-4 col-md-4">
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/album/0f7R0jf0pcTb6K6IVVPcMD?utm_source=generator" width="100%"
                 height="352" frameBorder="0" allowfullscreen=""
@@ -98,9 +100,9 @@
 
     <hr size="1px">
 
-    <h2>Concierto de Linkin Park en Argentina</h2>
+    <h2 data-aos="fade-right">Concierto de Linkin Park en Argentina</h2>
 
-    <div>
+    <div  data-aos="fade-left">
         <div class="video-container">
             <iframe class="concierto" width="560" height="315"
                 src="https://www.youtube-nocookie.com/embed/zY2U1zz_xmw?autoplay=1&rel=0&mute=1&showinfo=0&controls=1"
@@ -109,7 +111,6 @@
                 allowfullscreen></iframe>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-row">
@@ -118,7 +119,8 @@
                     <div class="social-link">
                         <a href="https://github.com/NahuelBramardi"><i class="fab fa-github"></i></a>
                         <a href="https://www.instagram.com/nahuelbramardii/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=+54 9 2664 36-8293&text=MENSAJE"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+54 9 2664 36-8293&text=MENSAJE"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -135,9 +137,17 @@
         </div>
     </footer>
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
